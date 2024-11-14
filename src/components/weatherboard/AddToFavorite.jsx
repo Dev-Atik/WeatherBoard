@@ -22,7 +22,7 @@ export default function AddToFavorite() {
     const found = favorites.find((fav) => fav.location === location);
 
     if (!found) {
-      addToFavorites(longitude, latitude, location);
+      addToFavorites(latitude, longitude, location);
     } else removeFromFavorites(location);
 
     toggleFavorites(!isFavorite);
